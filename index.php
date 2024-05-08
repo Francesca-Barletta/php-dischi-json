@@ -12,12 +12,20 @@
 
     <div id="app">
         <ul>
-            <li v-for="disc in discs">
-                <p>{{ disc.title }}</p>
-                <p>{{ disc.author }}</p>
-                <p>{{ disc.year }}</p>
-                <p>{{ disc.genre }}</p>
-                <img :src="disc.poster">
+            <li class="col-4" v-for="disc in discs">
+                <div class="card">
+                    <div class="card-header">
+                        <img :src="disc.poster">
+                    </div>
+                    <div class="card-body">
+                        <p>{{ disc.title }}</p>
+                        <p>{{ disc.author }}</p>
+                        <p>{{ disc.year }}</p>
+                    </div>
+                </div>
+               
+                
+                
             </li>
           
         </ul>
