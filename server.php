@@ -25,4 +25,4 @@ $data = [
     'success' => true
   ];
 
-echo json_econde($data);
+// echo json_econde($data);

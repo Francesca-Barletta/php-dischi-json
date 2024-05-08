@@ -10,7 +10,10 @@
     methods: {
       fetchDiscs(){
         axios.get('./server.php').then((res) => {
-          this.discs = res.data.results
+          console.log(res.data);
+          this.discs = res.data;
+          // console.log(this.discs)
+          // console.log(this.discs[0].title)
         })
       }
     },
