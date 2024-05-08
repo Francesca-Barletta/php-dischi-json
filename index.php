@@ -11,24 +11,25 @@
 <body>
 
     <div id="app">
-        <ul>
-            <li class="col-4" v-for="disc in discs">
-                <div class="card">
-                    <div class="card-header">
-                        <img :src="disc.poster">
+        <?php include_once __DIR__ . '/header.php';?>
+        <div class="container">
+            <ul>
+                <li class="col-4" v-for="disc in discs">
+                    <div class="card">
+                        <div class="card-header">
+                            <img :src="disc.poster">
+                        </div>
+                        <div class="card-body">
+                            <h3>{{ disc.title }}</h3>
+                            <p>{{ disc.author }}</p>
+                            <h3>{{ disc.year }}</h3>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p>{{ disc.title }}</p>
-                        <p>{{ disc.author }}</p>
-                        <p>{{ disc.year }}</p>
-                    </div>
-                </div>
-               
-                
-                
-            </li>
-          
-        </ul>
+                </li>
+
+            </ul>
+        </div>
+       
 
     </div>
 
