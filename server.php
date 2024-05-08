@@ -14,4 +14,15 @@ $discs = [
         'poster'=> 'https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg',
         'genre'=> 'Pop'
     ],
-]
+];
+
+header('Content-type: application/json');
+
+echo json_encode($discs);
+
+$data = [
+    'results' => $discs,
+    'success' => true
+  ];
+
+echo json_econde($data);
